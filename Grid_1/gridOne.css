@@ -1,0 +1,124 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+/* Grid One */
+.gridOne {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.gridOne p:nth-child(1) {
+    border-bottom: 1px solid red;
+}
+.gridOne p:nth-child(2) {
+    border-bottom: 1px solid blue;
+}
+
+/* Grid Two */
+.gridTwo {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.gridTwo-childOne {
+    background-color: red;
+}
+.gridTwo-childTwo {
+    background-color: green;
+}
+.gridTwo-childThree {
+    background-color: cyan;
+}
+
+/* Grid Three */
+.gridThree {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+.gridThree-childOne {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: orange;
+}
+.gridThree-childTwo {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    object-fit: cover;
+}
+
+/* Grid Four */
+.gridFour {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 500px;
+    margin-bottom: 50px;
+    background-color: green;
+}
+.gridFour-ChildOne {
+    width: 100%;
+}
+#gridFour-ChildTwo {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+/* Grid Five */
+.gridFive {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 500px;
+    margin-bottom: 50px;
+    background-color: yellow;
+    box-sizing: border-box;
+}
+.gridFive-ChildOne {
+    width: 100%;
+}
+#gridFive-ChildTwo {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    object-fit: cover;
+}
+#gridFive-ChildTwo img:nth-child(1){
+    width: 100%;
+}
+
+/* Grid Six */
+.gridSix {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    width: 500px;
+    background-color: lightgray;
+    margin-bottom: 150px;
+}
+.gridSix-Icon i {
+    font-size: 1rem;
+    color: black;
+}
+
